@@ -1,0 +1,235 @@
+/* Layout
+------------------------------------------*/
+html,
+body,
+#home {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: url(../imagens/capa.png), url(../imagens/ruido.png),
+    linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegação
+------------------------------------------*/
+nav.navbar-transparente {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.2em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor {
+  width: 2px;
+  background: white;
+  height: 1.4em;
+  margin: auto 15px;
+  /*border: 2px solid red;*/
+}
+
+/* Capa
+------------------------------------------*/
+.capa {
+  text-align: center;
+}
+
+.btn-custom {
+  color: white;
+  border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin: 10px 10px;
+}
+
+.btn-roxo {
+  background: #7c25f8;
+}
+
+.btn-roxo:hover {
+  background: #6207e3;
+  color: white;
+}
+
+.btn-branco {
+  border: 2px solid white;
+}
+
+.btn-branco:hover {
+  background: white;
+  color: black;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
+/* Conteúdos
+------------------------------------------*/
+.caixa {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#servicos {
+  background: white;
+}
+
+.albuns {
+  padding: 10px 0;
+}
+
+.rotacionar {
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
+
+footer {
+  background: black;
+  padding: 50px 0 20px 0;
+  position: relative;
+}
+
+footer h4 {
+  margin-top: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  float: right;
+  margin: 0 5px;
+}
+
+/* Tipografia
+------------------------------------------*/
+h1 {
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px 0;
+  color: white;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+#servicos h2,
+h3 {
+  color: #7c25f8;
+}
+
+#servicos p {
+  color: black;
+  font-size: 1.1em;
+}
+
+#recursos h2,
+p {
+  color: white;
+}
+
+#recursos h3 {
+  color: #9bf0e1;
+}
+
+#recursos p {
+  font-size: 1.1em;
+}
+
+footer h4 {
+  color: #919496;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+footer .navbar-nav a:hover {
+  color: #9bf0e1;
+}
+
+/* Responsividade
+------------------------------------------*/
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap*/
+
+/* Extra small devices (portrait phones, lexx than 576px) */
+@media (max-width: 575.98px) {
+  .btn-custom {
+    margin: 10px 35px;
+    font-size: 0.8em;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .btn-custom {
+    margin: 10px 15px;
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 7em;
+  }
+}
